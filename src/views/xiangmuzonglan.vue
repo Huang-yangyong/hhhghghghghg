@@ -131,11 +131,11 @@
     <el-table-column
       prop="name"
       label="项目名称"
-      width="120"
+      width="160"
       show-overflow-tooltip>
     </el-table-column>
      <el-table-column label="项目类别" prop="wenjianhao"
-      width="120"
+      width="180"
       show-overflow-tooltip>
       
     </el-table-column>
@@ -143,41 +143,41 @@
     <el-table-column
       prop="yanshoupifu"
       label="项目主管部门"
-      width="120"
+      width="160"
       show-overflow-tooltip>
     </el-table-column>
     <el-table-column
       prop="xiangmujibie"
       label="项目级别"
-      width="120"
+      width="160"
       show-overflow-tooltip>
     </el-table-column>
 
     <el-table-column
       prop="zhuguankeshi"
       label="主管科室"
-      width="120"
+      width="160"
       show-overflow-tooltip>
     </el-table-column>
 
     <el-table-column
       prop="xiangmuxiachengongsi"
       label="项目下沉公司"
-      width="120"
+      width="160"
       show-overflow-tooltip>
     </el-table-column>
 
     <el-table-column
       prop="xiangmufuzeren"
       label="项目负责人"
-      width="120"
+      width="160"
       show-overflow-tooltip>
     </el-table-column>
 
     <el-table-column
       prop="zongtouzi"
       label="总投资"
-      width="120"
+      width="160"
       show-overflow-tooltip>
     </el-table-column>
   
@@ -293,21 +293,36 @@ export default {
           beizhu:'某某某单位',
           name:'标题标题标题标题',
           wenjianhao:'某某某哦【2020】2号',
-          yanshoupifu:'2020-08-08'
+          yanshoupifu:'2020-08-08',
+          xiangmujibie:'资金类',
+          zhuguankeshi:'科室一',
+          xiangmuxiachengongsi:'某某子公司一',
+          xiangmufuzeren:'隔壁老王',
+          zongtouzi:'5000万'
         },{
           id:2,
           cailiao:'类型一',
           beizhu:'某某某单位',
           name:'标题标题标题标题',
           wenjianhao:'某某某哦【2020】2号',
-          yanshoupifu:'2020-08-08'
+          yanshoupifu:'2020-08-08',
+          xiangmujibie:'资金类',
+          zhuguankeshi:'科室一',
+          xiangmuxiachengongsi:'某某子公司一',
+          xiangmufuzeren:'隔壁老王',
+          zongtouzi:'5000万'
         },{
           id:3,
           cailiao:'类型一',
           beizhu:'某某某单位',
           name:'标题标题标题标题',
           wenjianhao:'某某某哦【2020】2号',
-          yanshoupifu:'2020-08-08'
+          yanshoupifu:'2020-08-08',
+          xiangmujibie:'资金类',
+          zhuguankeshi:'科室一',
+          xiangmuxiachengongsi:'某某子公司一',
+          xiangmufuzeren:'隔壁老王',
+          zongtouzi:'5000万'
         }
          ],
         multipleSelection: [],

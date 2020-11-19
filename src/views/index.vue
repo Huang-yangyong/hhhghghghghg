@@ -9,8 +9,6 @@
       :value="item.value">
     </el-option>
     </el-select>
-
-
      <el-select class="riqi" v-model="value2" placeholder="请选择日期范围">
       <el-option
       v-for="item2 in options2"
@@ -232,8 +230,8 @@ export default {
   }
   .el-main{
     padding: 10px;
-  }
-  .main{  
+  } 
+  .main{
     width: 1085px;
     height: 545px;
     background-color: rgba(255, 255, 255, 1);
@@ -241,4 +239,5 @@ export default {
     border-radius: 5px;
     padding: 20px;
   }
+  
 </style>

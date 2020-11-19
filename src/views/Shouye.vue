@@ -45,19 +45,19 @@
         <span slot="title">系统管理</span>
         </template>
         <el-menu-item-group>
-          <el-menu-item index="1-1"><router-link tag="div" class="sy" to="/caozuorizhi" style="margin-left:0px;">操作日志</router-link></el-menu-item>
-          <el-menu-item index="1-2"><router-link tag="div" class="sy" to="/queseguanli" style="margin-left:0px;">角色管理</router-link></el-menu-item>
-          <el-menu-item index="1-3"><router-link tag="div" class="sy" to="/quanxianguanli" style="margin-left:0px;">权限管理</router-link></el-menu-item>
-          <el-menu-item index="1-4"><router-link tag="div" class="sy" to="/qiyeguanli" style="margin-left:0px;">企业管理</router-link></el-menu-item>
+          <el-menu-item index="1-19"><router-link tag="div" class="sy" to="/caozuorizhi" style="margin-left:0px;">操作日志</router-link></el-menu-item>
+          <el-menu-item index="1-29"><router-link tag="div" class="sy" to="/queseguanli" style="margin-left:0px;">角色管理</router-link></el-menu-item>
+          <el-menu-item index="1-39"><router-link tag="div" class="sy" to="/quanxianguanli" style="margin-left:0px;">权限管理</router-link></el-menu-item>
+          <el-menu-item index="1-49"><router-link tag="div" class="sy" to="/qiyeguanli" style="margin-left:0px;">企业管理</router-link></el-menu-item>
           <el-submenu index="1-4">
               <template slot="title">
               <span slot="title">基础维护</span>
               </template>
               <el-menu-item-group>
-          <el-menu-item index="1-1"><router-link tag="div" class="sy" to="/gongsiweihu" style="margin-left:0px;">公司维护</router-link></el-menu-item>
-          <el-menu-item index="1-2"><router-link tag="div" class="sy" to="/keshiweihu" style="margin-left:0px;">科室维护</router-link></el-menu-item>
-          <el-menu-item index="1-3"><router-link tag="div" class="sy" to="/zhichifangshi" style="margin-left:0px;">支持方式</router-link></el-menu-item>
-          <el-menu-item index="1-4"><router-link tag="div" class="sy" to="/zhuguanbumen" style="margin-left:0px;">主管部门</router-link></el-menu-item>
+          <el-menu-item index="1-18"><router-link tag="div" class="sy" to="/gongsiweihu" style="margin-left:0px;">公司维护</router-link></el-menu-item>
+          <el-menu-item index="1-28"><router-link tag="div" class="sy" to="/keshiweihu" style="margin-left:0px;">科室维护</router-link></el-menu-item>
+          <el-menu-item index="1-38"><router-link tag="div" class="sy" to="/zhichifangshi" style="margin-left:0px;">支持方式</router-link></el-menu-item>
+          <el-menu-item index="1-48"><router-link tag="div" class="sy" to="/zhuguanbumen" style="margin-left:0px;">主管部门</router-link></el-menu-item>
               </el-menu-item-group>
               </el-submenu>
         </el-menu-item-group>
@@ -69,9 +69,9 @@
         <span slot="title">公告发布</span>
         </template>
         <el-menu-item-group>
-          <el-menu-item index="1-1"><router-link tag="div" class="sy" to="/xiangmufabu" style="margin-left:0px;">项目发布</router-link></el-menu-item>
-          <el-menu-item index="1-2"><router-link tag="div" class="sy" to="/tongzhifabu" style="margin-left:0px;">通知发布</router-link></el-menu-item>
-          <el-menu-item index="1-3"><router-link tag="div" class="sy" to="/cankaocailiao" style="margin-left:0px;">参考材料</router-link></el-menu-item>
+          <el-menu-item index="1-17"><router-link tag="div" class="sy" to="/xiangmufabu" style="margin-left:0px;">项目发布</router-link></el-menu-item>
+          <el-menu-item index="1-27"><router-link tag="div" class="sy" to="/tongzhifabu" style="margin-left:0px;">通知发布</router-link></el-menu-item>
+          <el-menu-item index="1-37"><router-link tag="div" class="sy" to="/cankaocailiao" style="margin-left:0px;">参考材料</router-link></el-menu-item>
         </el-menu-item-group>        
       </el-submenu>
       <el-submenu index="4">
@@ -80,9 +80,9 @@
         <span slot="title">项目填报</span>
           </template>
           <el-menu-item-group>
-          <el-menu-item index="1-1"><router-link tag="div" class="sy" to="/zijinleitianbao" style="margin-left:0px;">资金类填报</router-link></el-menu-item>
-          <el-menu-item index="1-2"><router-link tag="div" class="sy" to="/kejileitianbao" style="margin-left:0px;">科技类填报</router-link></el-menu-item>
-          <el-menu-item index="1-3"><router-link tag="div" class="sy" to="/ronyuleitianbao" style="margin-left:0px;">荣誉类填报</router-link></el-menu-item>
+          <el-menu-item index="1-12"><router-link tag="div" class="sy" to="/zijinleitianbao" style="margin-left:0px;">资金类填报</router-link></el-menu-item>
+          <el-menu-item index="1-23"><router-link tag="div" class="sy" to="/kejileitianbao" style="margin-left:0px;">科技类填报</router-link></el-menu-item>
+          <el-menu-item index="1-34"><router-link tag="div" class="sy" to="/ronyuleitianbao" style="margin-left:0px;">荣誉类填报</router-link></el-menu-item>
         </el-menu-item-group>
       </el-submenu>
 
@@ -103,8 +103,8 @@
         <span slot="title">验收管理</span>
           </template>
           <el-menu-item-group>
-          <el-menu-item index="1-1"><router-link tag="div" class="sy" to="/zijinleiyanshou" style="margin-left:0px;">资金类验收</router-link></el-menu-item>
-          <el-menu-item index="1-2"><router-link tag="div" class="sy" to="/kejileiyanshou" style="margin-left:0px;">科技类验收</router-link></el-menu-item>
+          <el-menu-item index="1-11"><router-link tag="div" class="sy" to="/zijinleiyanshou" style="margin-left:0px;">资金类验收</router-link></el-menu-item>
+          <el-menu-item index="1-22"><router-link tag="div" class="sy" to="/kejileiyanshou" style="margin-left:0px;">科技类验收</router-link></el-menu-item>
         </el-menu-item-group>
       </el-submenu>
 
@@ -129,7 +129,7 @@
       <el-menu-item index="9">
           <template slot="title">
         <i class="el-icon-delete"></i>
-        <span slot="title">回收站</span>
+        <router-link tag="span" slot="title" class="sy" to="/huishouzhan" style="margin-left:0px;">回收站</router-link>
           </template>
       </el-menu-item>
     </el-menu>
@@ -237,7 +237,7 @@ h1{
     padding: 0px;
 }
 .top{
-    width: 100%;
+    width: 1912px;;
     height: 50px;
     
 }

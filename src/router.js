@@ -24,6 +24,7 @@ import kejileiyanshou from './views/kejileiyanshou.vue'
 import xiangmuwenjian from './views/xiangmuwenjian.vue'
 import shenjibaogao from './views/shenjibaogao.vue'
 import xiangmuzonglan from './views/xiangmuzonglan.vue'
+import huishouzhan from './views/huishouzhan.vue'
 
 Vue.use(Router)
 
@@ -143,6 +144,11 @@ export default new Router({
                     path: 'xiangmuzonglan',
                     component: () =>
                         import ( /* webpackChunkName: "about" */ './views/xiangmuzonglan.vue')
+                },
+                {
+                    path: 'huishouzhan',
+                    component: () =>
+                        import ( /* webpackChunkName: "about" */ './views/huishouzhan.vue')
                 }
             ]
         },

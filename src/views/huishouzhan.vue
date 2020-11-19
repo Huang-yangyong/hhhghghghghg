@@ -1,7 +1,7 @@
 <template>
     <div class="zhenti">
         <div class="top">
-            <el-select class="leix"  v-model="value" placeholder="项目主管部门">
+            <el-select class="leix"  v-model="value" placeholder="项目主管部门" style="float:left">
       <el-option
       v-for="item in options"
       :key="item.value"
@@ -9,39 +9,32 @@
       :value="item.value">
     </el-option>
     </el-select>
-  <el-select class="ccc" v-model="value2" placeholder="项目下沉公司">
-      <el-option
-      v-for="item2 in options2"
-      :key="item2.value"
-      :label="item2.label"
-      :value="item2.value">
-    </el-option>
-    
-  </el-select>
-  <el-select class="hhh" v-model="value2" placeholder="模糊搜索">
-      <el-option
-      v-for="item2 in options2"
-      :key="item2.value"
-      :label="item2.label"
-      :value="item2.value">
-    </el-option>
-    
-  </el-select>
-  <el-button type="primary" style="margin-left:20px;">搜索</el-button><el-button>重置</el-button>
 
+  <!-- <el-button type="primary" style="margin-left:20px;">搜索</el-button><el-button>重置</el-button> -->
+<el-select class="ccc" v-model="value2" placeholder="项目下沉公司" style="float:left">
+      <el-option
+      v-for="item2 in options2"
+      :key="item2.value"
+      :label="item2.label"
+      :value="item2.value">
+    </el-option>
+    
+  </el-select>
+  <el-row class="anniu">
+<el-button type="primary" class="smm">搜索</el-button>
+
+<el-button class="smm">重置</el-button>
+
+</el-row>
+       
         </div>
         <div class="dsaasd">
 
         </div>
         <div class="ssaas">
-            <el-row class="anniu">
-              <el-button type="primary" class="">进度填报</el-button>
-<el-button type="primary" class="">新增</el-button>
-<el-button type="danger">批量删除</el-button>
-<el-button class="smm">提交验证</el-button>
-<el-button class="smm">导出</el-button>
-</el-row>
-       
+            
+<el-button class="smm">批量还原</el-button>
+<el-button type="danger" class="smm">批量删除</el-button>
   </div> 
       <div class="div_main" style="margin-top:20px;">
         <el-row class="anniu">
@@ -60,77 +53,33 @@
     </el-table-column>
     <el-table-column
       label="序号"
-      width="100">
+      width="50">
       <template slot-scope="scope">{{ scope.row.id }}</template>
-    </el-table-column>
-    <el-table-column
-      prop="cailiao"
-      label="项目名称"
-      width="100">
-    </el-table-column>
-    <el-table-column
-      prop="beizhu"
-      label="项目主体"
-      width="100"
-      show-overflow-tooltip>
     </el-table-column>
 
     <el-table-column
       prop="name"
-      label="总投资"
-      width="100"
+      label="项目名称"
+      width="560"
       show-overflow-tooltip>
     </el-table-column>
+     <el-table-column label="项目类别" prop="wenjianhao"
+      width="180"
+      show-overflow-tooltip>
+      
+    </el-table-column>
+ 
     
-<el-table-column
-      prop="xiadariqi"
-      label="资金文件下达日期"
-      width="140"
-      show-overflow-tooltip>
-    </el-table-column>
-
-<el-table-column
-      prop="xiadajine"
-      label="下达资金金额"
-      width="140"
-      show-overflow-tooltip>
-    </el-table-column>
-
-    <el-table-column
-      prop="leijiwanchen"
-      label="累计完成投资"
-      width="140"
-      show-overflow-tooltip>
-    </el-table-column>
-
-    <el-table-column
-      prop="daoweizijin"
-      label="到位资金"
-      width="140"
-      show-overflow-tooltip>
-    </el-table-column>
-
-    <el-table-column label="操作">
+       <el-table-column label="操作" width="220">
       <template slot-scope="scope">
         <el-button
           size="mini"
           type="success"
-          @click="handleEdit(scope.$index, scope.row)">查看</el-button>
-           <el-button
-          size="mini"
-          type="primary"
-          @click="handleDelete(scope.$index, scope.row)">编辑</el-button>
-        <el-button
-          size="mini"
-          type="danger"
-          @click="handleDelete(scope.$index, scope.row)">删除</el-button>
+          @click="handleEdit(scope.$index)">详情</el-button>
+           
       </template>
     </el-table-column>
-
-     <el-table-column prop="zhuguanbumen" label="主管部门">
-       
-    </el-table-column>
-</el-table>
+  </el-table>
       </div>
       <div class="foot">
         <el-pagination
@@ -146,6 +95,7 @@
 
 .smm{
     margin-left: 10px;
+    margin-top: 20px;
 }
 .ssaas{
     margin-left: 20px;
@@ -163,13 +113,16 @@
 .sssss div{
     float: left;
 }
+.sssaaas{
+    float: left;
+}
 .sssss{
     
     margin-right: 20px;
     margin-top: 20px;
 }
 .erchen{
-    width: 850px;
+    width: 350px;
     height: 100px;
   
 }
@@ -192,11 +145,11 @@
     margin-left: 20px;
 }
 .zhenti{
-    width: 1630px;
-    height: 500px;
+    width: 1131px;
+    height: 508px;
     background: #EEF7FE;
 }
- 
+
   .sousuo1{
     margin-left: 10px;
   }
@@ -212,6 +165,11 @@
   .el-input{
     width: 240px;
   }
+  .el-table td, .el-table th.is-leaf {
+  border-left: 1px solid rgba(211,217,223);
+  border-top: 1px solid rgba(211,217,223);
+  
+}
 </style>
 
 <script>
@@ -220,34 +178,34 @@ export default {
       return {
         tableData: [{
           id:1,
-          name:'1000万',
-          zhuguanbumen:'发改',
-          xiadariqi:'2020-09-01',
-          xiadajine:'500万',
-          jine:'2020-09-01',
-          leijiwanchen:'200万',
-          daoweizijin:'100万'
-        }, {
-           
+          name:'某某某公司建设的大数据项目',
+          wenjianhao:'资金类'
+          
+        },{
+        
           name:'',
-        }
-        , {
-         
+          wenjianhao:''
+          
+        },{
+      
           name:'',
+          wenjianhao:''
+          
+        },{
+     
+          name:'',
+          wenjianhao:''
+          
+        },{
+  
+          name:'',
+          wenjianhao:''
+          
+        },{
 
-        }
-        , {
-          id:'',
           name:'',
-          beizhu:'',
-          cailiao:''
-        }
-        , {
-           id:'',
-          name:'',
-           beizhu:'',
-          date: '2020-08-08',
-          cailiao:''
+          wenjianhao:''
+          
         }
          ],
         multipleSelection: [],
